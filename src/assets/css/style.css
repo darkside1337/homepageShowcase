@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+
+body {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: calc(15px + 0.390625vw);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: justify;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Playfair Display", sans-serif;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+header {
+    background-image: url(../images/bg.svg);
+    background-size: cover;
+    background-position: center;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1240px;
+}
+
+
+
+.about__me picture {
+    flex: 1;
+}
+
+.hero__img {
+    position: relative;
+}
+
+.hero__title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5px;
+    text-align: center;
+}
+
+.about__me {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-shadow: -5px 5px 10px #000000;
+}
+
+.about__me picture img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero__about__me {
+    flex: 1;
+    backdrop-filter: blur(8px);
+}
+
+.about__me__container {
+    /* margin: 10% auto; */
+    margin: 10% 10% 10% 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about__me__container h2 {
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+main {
+    background-image: url(../images/main-bg.svg);
+    background-size: cover;
+    background-position: center;
+    padding: 16px;
+}
+
+.projects__container {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
+.project .project__img {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project .project__description {
+    display: flex;
+    flex-direction: column;
+}
+
+.project__description .project__upper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project__upper div {
+    display: flex;
+}
+
+main .container {
+    backdrop-filter: blur(8px);
+    text-shadow: -5px 5px 10px #000000;
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+main .container h1 {
+    text-align: center;
+    border-bottom: 16px;
+    margin: 16px 0px;
+}
+
+footer {
+    background-image: url(../images/Cloudy.svg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+}
+
+footer .container {
+    display: flex;
+    gap: 16px;
+
+
+}
+
+footer .container picture {
+    flex: 1;
+}
+
+.footer__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+footer .container img {
+    border-radius: 8px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+
+
+.telephone,
+.email,
+.footer__socials {
+    display: flex;
+    gap: 16px;
+}
+
+.footer__socials {
+    justify-content: flex-end;
+}
+
+/*  MEDIA QUERIES */
+/* MOBILE */
+@media screen and (max-width: 767px) {
+    .about__me {
+        flex-direction: column;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    .projects__container {
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    header {
+        height: auto;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    main .container {
+        padding: 16px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
